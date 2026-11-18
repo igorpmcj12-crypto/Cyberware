@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23060a0f'/%3E%3Cpath d='M16 5l9 4v7c0 5-4 9-9 11-5-2-9-6-9-11V9z' fill='none' stroke='%2343c77f' stroke-width='2'/%3E%3C/svg%3E"><meta name="theme-color" content="#1c3d30">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto acadêmico de conscientização em cibersegurança da Universidade Atitus.">
+  <title>CyberAware — Sua segurança começa com a informação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Bricolage+Grotesque:opsz,wght@12..96,600..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=10">
+</head>
+<body>
+  <div class="scroll-progress"></div><div class="noise"></div>
+  <div class="grid-bg"></div>
+<div class="ambient-points" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="motion-backdrop" aria-hidden="true"><span class="motion-orb orb-green"></span><span class="motion-orb orb-blue"></span><span class="motion-orb orb-mint"></span><span class="motion-grid"></span></div>
+  <canvas id="network-background" class="network-background" aria-hidden="true"></canvas>
+
+  <header class="navbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">⌁</span>
+      <span>CYBER<span>AWARE</span></span>
+    </a>
+    <nav>
+      <a class="active" href="index.html">Início</a>
+      <a href="projeto.html">O projeto</a>
+      <a href="ebook.html">E-book</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+    <a class="nav-cta" href="ebook.html">Começar a aprender <span>→</span></a>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="dot"></span> PROJETO ACADÊMICO • ATITUS</div>
+        <h1>Sua segurança<br><span>começa com<br>a informação.</span></h1>
+        <p>Entenda como os golpes digitais funcionam, reconheça as estratégias usadas pelos criminosos e aprenda a tomar decisões mais seguras na internet.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="projeto.html">Conhecer o projeto <span>→</span></a>
+          <a class="btn ghost" href="ebook.html">Ler o e-book <span>↗</span></a>
+        </div>
+        <div class="trust-line">
+          <span>▣</span> Desenvolvido para pessoas sem conhecimento técnico em segurança digital.
+        </div>
+      </div>
+
+      <div class="security-panel reveal delay-1">
+        <div class="panel-top"><span>SECURITY / OVERVIEW</span><span class="live"><i></i> ONLINE</span></div>
+        <div class="shield">⌾</div>
+        <div class="status">CONSCIENTIZAÇÃO ATIVA</div>
+        <div class="terminal">
+          <div><span class="prompt">$</span> scanning common threats...</div>
+          <div><span class="ok">✓</span> phishing <em>detected</em></div>
+          <div><span class="ok">✓</span> social_engineering <em>detected</em></div>
+          <div><span class="ok">✓</span> fake_links <em>detected</em></div>
+          <div><span class="prompt">$</span> knowledge = <b>protection</b></div>
+        </div>
+        <div class="panel-bottom"><span>FATOR HUMANO · DBIR 2026</span><strong data-count="62" data-suffix="%">62%</strong></div><div class="meter"><i style="--w:62%"></i></div>
+      </div>
+    </section>
+
+    <section class="stat-sec container">
+      <div class="stats">
+        <div class="stat"><b data-count="62" data-suffix="%">62%</b><p>das violações de dados envolveram uma ação humana, como clicar, responder ou informar uma senha.</p><small>Verizon DBIR 2026</small></div>
+        <div class="stat"><b data-count="41" data-suffix="%">41%</b><p>dos ataques de engenharia social usaram outros canais além do e-mail: telefone, mensagens e redes.</p><small>Verizon DBIR 2026</small></div>
+        <div class="stat"><b data-count="24" data-prefix="+" data-suffix=" mi">+24 mi</b><p>de brasileiros foram vítimas de golpes com Pix ou boleto entre julho de 2024 e junho de 2025.</p><small>FBSP / Datafolha</small></div>
+        <div class="stat"><b data-count="144" data-prefix="+" data-suffix="%">+144%</b><p>de aumento nos registros de estelionato no Brasil entre 2020 e 2025, chegando a 2,26 milhões de ocorrências.</p><small>Anuário Brasileiro de Segurança Pública 2026</small></div>
+      </div>
+    </section>
+    <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Urgência: “resolva agora”</span><span>Pedido de código recebido por SMS</span><span>Link encurtado ou estranho</span><span>Prêmio que você não pediu</span><span>Voz conhecida em número novo</span><span>Cobrança surpresa</span><span>Pedido de segredo: “não conte a ninguém”</span><span>Urgência: “resolva agora”</span><span>Pedido de código recebido por SMS</span><span>Link encurtado ou estranho</span><span>Prêmio que você não pediu</span><span>Voz conhecida em número novo</span><span>Cobrança surpresa</span><span>Pedido de segredo: “não conte a ninguém”</span></div></div>
+
+    <section class="intro section container reveal">
+      <div class="section-label">01 / O PROBLEMA</div>
+      <div class="two-col">
+        <div>
+          <h2>A internet ficou mais inteligente.<br><span>Os golpes também.</span></h2>
+        </div>
+        <div>
+          <p>Hoje usamos a internet para estudar, trabalhar, conversar, comprar, pagar contas e guardar informações pessoais. Isso também cria oportunidades para criminosos explorarem confiança, medo, urgência e desatenção.</p>
+          <p>O problema não é apenas técnico. Muitas fraudes começam com uma conversa convincente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="why section">
+      <div class="container">
+        <div class="section-label">02 / POR QUE APRENDER?</div>
+        <div class="why-grid">
+          <article class="feature-card">
+            <span class="number">01</span>
+            <div class="icon">◉</div>
+            <h3>Reconhecer</h3>
+            <p>Aprenda a perceber sinais que aparecem antes de um golpe acontecer.</p>
+          </article>
+          <article class="feature-card featured">
+            <span class="number">02</span>
+            <div class="icon">⌁</div>
+            <h3>Entender</h3>
+            <p>Descubra como criminosos usam <span class="term" tabindex="0" data-tip="Técnicas que enganam a pessoa, e não o computador, para conseguir dados, acesso ou dinheiro.">engenharia social</span> para manipular decisões.</p>
+          </article>
+          <article class="feature-card">
+            <span class="number">03</span>
+            <div class="icon">◈</div>
+            <h3>Proteger</h3>
+            <p>Transforme conhecimento em hábitos simples de segurança no dia a dia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="real section container">
+      <div class="section-label">03 / SITUAÇÕES REAIS</div>
+      <div class="section-heading">
+        <div>
+          <h2>Um golpe pode começar<br><span>com uma mensagem comum.</span></h2>
+        </div>
+        <p>O objetivo aqui não é assustar. É mostrar o que acontece para que você consiga reconhecer o padrão. Os exemplos abaixo são ilustrativos.</p>
+      </div>
+
+      <div class="scenario-grid">
+        <article class="scenario">
+          <div class="scenario-tag">PHISHING</div>
+          <h3>“Detectamos uma compra de R$ 2.899.”</h3>
+          <p>Uma mensagem usa o nome de um banco e cria urgência. O link leva para uma página falsa que tenta capturar dados.</p>
+          <a href="ebook.html#phishing">Entender o mecanismo →</a>
+        </article>
+        <article class="scenario">
+          <div class="scenario-tag">ENTREGA</div>
+          <h3>“Sua encomenda está retida.”</h3>
+          <p>Uma falsa cobrança pede pagamento para liberar uma encomenda. A aparência de normalidade é parte da estratégia.</p>
+          <a href="ebook.html#engenharia">Ver como funciona →</a>
+        </article>
+        <article class="scenario">
+          <div class="scenario-tag">QR CODE</div>
+          <h3>“Escaneie para concluir o pagamento.”</h3>
+          <p>Um QR Code aparentemente legítimo pode direcionar para um destino controlado pelo criminoso.</p>
+          <a href="ebook.html#qr">Explorar o exemplo →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="ebook-callout section container reveal">
+      <div class="callout-content">
+        <div class="section-label">04 / APROFUNDE</div>
+        <h2>Não fique só na dica.<br><span>Entenda o golpe.</span></h2>
+        <p>Nosso e-book mostra, passo a passo, como diferentes golpes são construídos, quais gatilhos psicológicos aparecem e onde a vítima pode interromper o ataque.</p>
+        <a class="btn primary" href="ebook.html">Abrir o e-book <span>→</span></a>
+      </div>
+      <div class="book-visual">
+        <div class="book">
+          <div class="book-code">01<br>PHISHING</div>
+          <div class="book-title">THE<br>HUMAN<br>FIREWALL</div>
+          <div class="book-footer">CYBERAWARE / ATITUS</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final section">
+      <div class="container final-inner">
+        <div class="section-label">05 / O PRÓXIMO PASSO</div>
+        <h2>Quanto mais você entende,<br><span>mais difícil fica ser enganado.</span></h2>
+        <a class="btn primary" href="projeto.html">Conhecer o projeto <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+  <div class="sf-main">
+    <div class="sf-id">
+      <div class="logo-plate" role="group" aria-label="Universidade Atitus e Ciência da Computação">
+        <img class="lp-atitus" src="assets/atitus-logo.svg" alt="Universidade Atitus" width="166" height="145" loading="lazy">
+        <span class="lp-divider" aria-hidden="true"></span>
+        <img class="lp-cc" src="assets/ciencia-computacao-logo.png" alt="Ciência da Computação" width="737" height="174" loading="lazy">
+      </div>
+      <div class="sf-brand">
+        <strong class="sf-name"><span aria-hidden="true">⌁</span> CYBER<em>AWARE</em></strong>
+        <p>Projeto acadêmico de conscientização em cibersegurança, desenvolvido no curso de Ciência da Computação da Atitus.</p>
+      </div>
+    </div>
+    <a class="qr-card" href="https://igorpmcj12-crypto.github.io/Cyberware/" aria-label="Abrir o site CyberAware" title="Abrir o site CyberAware">
+      <span class="qr-frame"><img src="assets/qr-reference.png" alt="QR Code do site CyberAware" width="920" height="987" loading="lazy"></span>
+      <span class="qr-text"><small>ACESSE NO CELULAR</small><b>Escaneie o QR Code</b><span>e abra o CyberAware</span></span>
+    </a>
+  </div>
+  <div class="sf-bottom"><span>ATITUS · CIÊNCIA DA COMPUTAÇÃO</span><span>© 2026 CyberAware</span></div>
+</footer>
+  <script src="script.js?v=9"></script>
+</body>
+</html>
